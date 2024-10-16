@@ -1,0 +1,108 @@
+<DOCTYPE html>
+    <html lan="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint"content="width=device-width,initial-scale=1.0">
+    <title> Document</title>
+</head>
+<body>
+    <div class="LOGIN">
+        <form >
+            <label for="email">Enter your Email:</label>
+            <input type="email" name="email" id="email"/>
+            <br>
+            <br>
+            <label for="password">Enter Your Password:</label>
+            <input type="password" name="password" id="password"/>
+            <br>
+            <br> 
+            <input class="btn" type="button" value="👉LOGIN"/>
+            <br>
+            <br> <hr>
+            <label for="text">Are you new here?</label>
+           <br>
+            <input type="radio" name="option" value="option" /> Yes
+            <br>
+            <input type="radio" name="option" value="option"> No
+            <br> <br> <hr>
+            <label for="text">What  can you offer?</label>
+            <br>
+                        <input type="checkbox" name="checkbox" value="checkbox"> Web Design
+                        <br>
+                        <input type="checkbox" name="checkbox" value="checkbox"> Programming
+                        <br>
+                        <input type="checkbox" name="checkbox" value="checkbox"> Data Structures
+                   <br> <br> <hr>
+     <label for="listbox">Select a programming language:</label>
+                   <select name="listbox" id="listbox" multiple>
+                     <option value="C">C</option>
+                     <option value="C++">C++</option>
+                     <option value="Java">Java</option>
+                     <option value="Html">HTML</option>
+                     <option value="Python">Python</option>
+                   </select>
+                   <br>
+<br>
+<label for="text">What's Your Gender?</label>
+<select name="Male" id="Select">
+    <option value="Gender"> Male</option>
+    <option value="gender">Female</option>
+</select>
+<br>
+<br>
+<input class="btn" type="button" value="SUBMIT"/>
+<button class="btn" type="reset" value="reset.html"/>RESET</button>
+
+
+        </form>
+    </div>
+</body>
+<style>
+    .login{
+        border:3px solid yellow;
+        max-width: max-content;
+        padding: 20px 30px;
+        margin: 10px auto;
+        background-color: rgba(0, 183, 255, 0.589);
+    }
+    input[typebutton]{
+        display: block;
+        background-color: blanchedalmond;
+        margin: 0 auto;
+
+    }
+    html{
+        background-color: aqua;
+    }
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 7px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: #c8f10f;
+    transform: translateY(-2px);
+    color: black;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+}
+
+.btn:active {
+    background-color: #3e8e41;
+    transform: translateY(2px);
+}
+
+    
+</style>
+</html>
