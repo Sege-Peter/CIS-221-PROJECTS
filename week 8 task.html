@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"content="width=device-width,initial-scale=1.0">
+        <title>WEATHER PARIS</title>
+    </head>
+    <body class="body">
+        <form action="content" class="form">
+            <div class="input-container">
+                <input placeholder="Enter a city.." id="location">
+                <button class="btn">Search</button>
+            </div>
+ <hr>
+ <section>
+ <h1 class="paris">
+Paris
+ </h1>
+ <p class="p1">
+    Tuesday 07:45, moderate rain 
+    <br>
+    Humidity:<strong class="humid">87%</strong>, Wind: <strong class="humid"> 7.2km/h</strong>
+ </p>  
+
+ <strong class="temp">
+    <b class="sun" >🔆</b>24℃
+</strong>
+</section>
+<hr>
+<p class="p1">This project was coded by <a href="https://wa.me/c/254742380183" target="_blank">Sege Peter</a> and is on <a href="https://github.com/Sege-Peter/CIS-221-PROJECTS" target="_blank">GitHub</a> and hosted on <a href="netlify.com" target="_blank">Netlify.</a></p>
+        </form>
+        
+    </body>
+    <style>
+        .input-container {
+            display: flex;
+            width: 100%;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+         .btn{
+            background-color: rgb(111, 0, 255);
+            color: white;
+            border-radius: 5px;
+            border: none;
+
+        }
+        .humid{
+            color: red;
+        }
+        .sun{
+            width: 20px auto;
+        }
+        .paris{
+            font-size: 60px;
+        }
+        input {
+            flex: 1;
+            padding: 12px;
+            font-size: 16px;
+            border: 0px;
+            border-radius: 8px;
+            background-color: rgba(193, 162, 223, 0.432);
+            
+        }
+        .p1{
+            display:inline-block;
+            color: rgb(107, 103, 103);
+            
+        }
+        .temp{
+            font-size: 400%;
+        }
+        .form{
+            font-display: flex;
+            flex-direction: column;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box: shadow 10px; ;
+        }
+        .body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(238, 231, 231);
+        }
+    </style>
+    </html>
