@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skope Digital EMS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://i.pinimg.com/280x280_RS/23/ed/db/23eddb6cd73883cb76f15c6c8d50a6cf.jpg">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="https://i.pinimg.com/280x280_RS/23/ed/db/23eddb6cd73883cb76f15c6c8d50a6cf.jpg" alt="Skope Digital Logo">
+            <h1>Skope Digital Company EMS</h1>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="#login-form">Login</a></li>
+            <li><a href="#registration-form">Register</a></li>
+            <li><a href="#finance-section" class="restricted-section">Finance</a></li>
+            <li><a href="#department-section">Departments</a></li>
+            <li><a href="#procurement-section" class="restricted-section">Procurement</a></li>
+            <li><a href="#leave-section" class="restricted-section">Leave</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <section id="login-form" class="dropdown-section active">
+            <h2>Login</h2>
+            <form action="#" method="POST" class="form" id="login-form">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required placeholder="Enter your password">
+                </div>
+                <button type="submit" class="btn" id="login-btn">Login</button>
+            </form>
+        </section>
+
+        <section id="registration-form" class="dropdown-section">
+            <h2>Employee Registration</h2>
+            <form action="#" method="POST" class="form">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label for="email-reg">Email:</label>
+                    <input type="email" id="email-reg" name="email" required placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="department">Department:</label>
+                    <input type="text" id="department" name="department" required placeholder="Enter your department">
+                </div>
+                <div class="form-group">
+                    <label for="password-reg">Password:</label>
+                    <input type="password" id="password-reg" name="password" required placeholder="Create a password">
+                </div>
+                <button type="submit" class="btn">Register</button>
+            </form>
+        </section>
+
+        <section id="finance-section" class="dropdown-section restricted">
+            <h2>Finance</h2>
+            <p>Manage and view transactions here.</p>
+        </section>
+
+        <section id="department-section" class="dropdown-section">
+            <h2>Departments</h2>
+            <p>departments will be seen here</p>
+        </section>
+
+        <section id="procurement-section" class="dropdown-section restricted">
+            <h2>Procurement</h2>
+            <p>All procurement tasks and orders.</p>
+        </section>
+
+        <section id="leave-section" class="dropdown-section restricted">
+            <h2>Leave Management</h2>
+            <p>Track employee leave requests and approvals.</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2024 Skope Digital Company | Designs Beyond Boundaries</p>
+    </footer>
+</body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background: #f4f4f4;
+    }
+
+    .header {
+        background: #1A73E8;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .header .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header img {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
+
+    .nav {
+        background: #333;
+        text-align: center;
+    }
+
+    .nav ul {
+        list-style: none;
+        padding: 0;
+        position: relative;
+    }
+
+    .nav ul li {
+        display: inline-block;
+        margin: 0 15px;
+    }
+
+    .nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.1rem;
+        padding: 10px 15px;
+        display: inline-block;
+    }
+
+    .nav ul li a:hover {
+        background-color: #ffc400;
+        border-radius: 5px;
+    }
+
+    .dropdown-section {
+        display: none;
+        background: white;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .dropdown-section.active {
+        display: block;
+    }
+
+    #login-form:target,
+    #registration-form:target,
+    #finance-section:target,
+    #department-section:target,
+    #procurement-section:target,
+    #leave-section:target {
+        display: block;
+    }
+
+    .main-content {
+        padding: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .form-container,
+    .dropdown-section {
+        background: white;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-container h2,
+    .dropdown-section h2 {
+        color: #1A73E8;
+        text-align: center;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-group label {
+        font-weight: bold;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        font-size: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .btn {
+        background: #1A73E8;
+        color: white;
+        padding: 10px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 5px;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background: #0056b3;
+    }
+
+    .footer {
+        background: #bd9100;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+</style>
+</html>
